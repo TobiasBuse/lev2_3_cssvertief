@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+
+    <form action="">
+        <fieldset>
+            <legend>Register form</legend>
+
+            <div>
+                <label for="">Name</label>
+                <input type="text" placeholder="Name" id="name">
+            </div>
+
+            <div>
+                <label for="">Surname</label>
+                <input type="text" placeholder="Surname" id="surname">
+            </div>
+
+            <div>
+                <label for="">Email</label>
+                <input type="text" placeholder="Email" id="email">
+            </div>
+
+            <!-- Radio-Auswahl wo nur 1 Element angekreuzt werden darf, wie z.B. bei Gender -->
+            <div>
+                <label for="">Gender</label>
+                <input type="radio" name="Gender" id="" checked>
+                <label for="">male</label>
+                <input type="radio" name="Gender" id="">
+                <label for="">Female</label>
+            </div>
+
+
+            <div>
+                <label for="">Picture</label>
+                <input type="button" value="Choose a file">
+                <span>No file chosen</span>
+            </div>
+
+            <!-- Select-Bar mit versch. Optionen mit nach unten zeigenden Pfeil -->
+            <div>
+                <label for="">Country</label>
+                <select name="country" id="country">
+                    <option value="Germany">Germany</option>
+                    <option value="France">France</option>
+                    <option value="USA">USA</option>
+                </select>
+            </div>
+
+
+
+            <!-- Select-Bar mit versch. Optionen mit einer Dropdown-Leiste an der Seite von oben nach unten-->
+
+            <div>
+                <label for="preferred languages">Preferred Languages</label>
+
+                <select name="preferred languages" id="preferred languages" multiple>
+                    <span>(To choose more than one use cmd key)</span>
+                    <option value="HTML">HTML</option>
+                    <option value="CSS">CSS</option>
+                    <option value="React">React</option>
+                    <option value="JS">JS</option>
+                </select>
+                <article class="position">(To choose more than one use cmd key)</article>
+
+            </div>
+
+            
+            <div>
+                <label for="Field of Activity">Field of Activity</label>
+                <input type="checkbox" id="field1" name="" value="IT">
+                <label for="vehicle1"> I have a bike</label>
+                <input type="checkbox" id="field2" name="" value="Design">
+                <label for="vehicle2"> I have a car</label>
+                <input type="checkbox" id="field3" name="" value="Other">
+                <label for="vehicle3"> I have a boat</label><br><br>
+            </div>
+
+
+            <!-- Input wird als Button gestaltet; unter "value" erhält der Button seine Beschriftung -->
+            <div>
+                <input type="button" value="Send">
+                <input type="button" value="Cancel">
+            </div>
+              </form>
+
+
+        </fieldset>
+
+
+    </form>
+
+
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>
